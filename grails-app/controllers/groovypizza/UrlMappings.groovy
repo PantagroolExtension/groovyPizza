@@ -8,7 +8,8 @@ class UrlMappings {
                 // apply constraints here
             }
         }
-
+        "/order"(controller: "Pizza", action: "order")
+        "/pizzas"(controller: "Pizza", action: "pizzas")
         "/"(view:"/index")
         "500"(view:'/error')
         "404"(view:'/notFound')
